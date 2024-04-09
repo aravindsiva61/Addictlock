@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\USER\Addictlock\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="caf080f14e7b2307fe3d58fc95b5076566b01107">
+        <dex dex="C:\Users\USER\Addictlock\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_aaf0164b002a64a4ad4fec1a49128dae149d2442\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    tools:context="com.example.addictlock.LockPreferences">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        />
+
+    <TextView
+        android:id="@+id/starttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Starttime"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/timePicker" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/startinputtext"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/timePicker"
+        android:layout_toRightOf="@+id/starttext"/>
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/startinputtext"
+        android:layout_below="@+id/timePicker"
+        />
+
+    <TextView
+        android:id="@+id/endtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text ="Endtime"
+        android:textSize="25dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/starttext" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/endinputtext"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/starttext"
+        android:layout_toRightOf="@+id/endtext"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/endtbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="SET"
+
+        android:layout_toRightOf="@+id/endinputtext"
+        android:layout_below="@+id/starttext"/>
+
+    <TextView
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat"
+        android:textSize="25sp"
+        android:layout_below="@+id/endtext"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/sun"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_below="@+id/repeat"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/mon"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_below="@+id/repeat"
+        android:layout_toRightOf="@+id/sun"
+        />
+    <Button
+        android:id="@+id/tue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_toRightOf="@+id/mon"
+        android:layout_below="@+id/repeat" />
+
+    <Button
+        android:id="@+id/wed"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_toRightOf="@+id/tue"
+        android:layout_below="@+id/repeat" />
+
+    <Button
+        android:id="@+id/thu"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_toRightOf="@+id/wed"
+        android:layout_below="@+id/repeat" />
+
+    <Button
+        android:id="@+id/fri"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_toRightOf="@+id/thu"
+        android:layout_below="@+id/repeat" />
+
+    <Button
+        android:id="@+id/sat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_toRightOf="@+id/fri"
+        android:layout_below="@+id/repeat" />
+
+    <Button
+        android:id="@+id/OKbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/sun"
+        />
+    <Button
+        android:id="@+id/Cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CACNEL"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/OKbtn"
+        android:layout_below="@+id/sun"
+        />
+
+</RelativeLayout>
